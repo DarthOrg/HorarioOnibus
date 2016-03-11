@@ -7,10 +7,11 @@
 
     <string name="action_configuracoes">Configurações</string>
     <string name="txt_horario">Horários</string>
-    <string name="txt_linhas_favoritas">Linhas Favoritas</string>
+    <string name="txt_favoritos">Linhas Favoritas</string>
     <string name="txt_temas">Temas</string>
     <string name="txt_configuracoes">Configurações</string>
     <string name="txt_compartilhar">Compartilhar</string>
     <string name="txt_sobre">Sobre</string>
     <string name="txt_feedback">Feedback</string>
+    <string name="txt_compartilhar_app">Compartilhar APP</string>
 </resources>

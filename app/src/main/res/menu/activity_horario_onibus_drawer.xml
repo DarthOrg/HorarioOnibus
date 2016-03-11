@@ -7,9 +7,9 @@
             android:icon="@drawable/ic_horarios"
             android:title="@string/txt_horario" />
         <item
-            android:id="@+id/nav_linhas_favoritas"
-            android:icon="@drawable/ic_linhas_favoritas"
-            android:title="@string/txt_linhas_favoritas" />
+            android:id="@+id/nav_favoritos"
+            android:icon="@drawable/ic_favoritos"
+            android:title="@string/txt_favoritos" />
         <item
             android:id="@+id/nav_temas"
             android:icon="@drawable/ic_temas"
@@ -23,9 +23,9 @@
     <item android:title="Comunicar">
         <menu>
             <item
-                android:id="@+id/nav_compartilhar"
+                android:id="@+id/nav_compartilhar_app"
                 android:icon="@drawable/ic_compartilhar"
-                android:title="@string/txt_compartilhar" />
+                android:title="@string/txt_compartilhar_app" />
             <item
                 android:id="@+id/nav_sobre"
                 android:icon="@drawable/ic_sobre"

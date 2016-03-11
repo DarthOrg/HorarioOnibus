@@ -67,7 +67,7 @@ public class HorarioOnibus extends AppCompatActivity
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_configuracoes) {
             return true;
-        }else if (id == R.id.action_linhas_favoritas) {
+        }else if (id == R.id.action_favoritos) {
             return true;
         }else if (id == R.id.action_pesquisar) {
             return true;
@@ -84,7 +84,7 @@ public class HorarioOnibus extends AppCompatActivity
 
         if (id == R.id.nav_horarios) {
             // Handle the camera action
-        } else if (id == R.id.nav_linhas_favoritas) {
+        } else if (id == R.id.nav_favoritos) {
 
         } else if (id == R.id.nav_temas) {
 

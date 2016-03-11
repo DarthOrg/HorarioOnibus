@@ -9,10 +9,10 @@
         android:icon="@drawable/ic_pesquisar_branco"
         app:showAsAction="always" />
     <item
-        android:id="@+id/action_linhas_favoritas"
+        android:id="@+id/action_favoritos"
         android:orderInCategory="100"
-        android:title="@string/txt_linhas_favoritas"
-        android:icon="@drawable/ic_linhas_favoritas_branco"
+        android:title="@string/txt_favoritos"
+        android:icon="@drawable/ic_favoritos_branco"
         app:showAsAction="always" />
     <item
         android:id="@+id/action_configuracoes"
