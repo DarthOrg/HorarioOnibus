@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2f3853</color>
+    <color name="colorPrimaryDark">#1e2433</color>
+
+    <color name="colorAccent">#cc0d23</color>
+    <color name="colorAccentDark">#aa0e25</color>
+
+    <color name="colorPrimaryVermelho">#f44336</color>
+    <color name="colorPrimaryDarkVermelho">#b23330</color>
+
+    <color name="colorPrimaryAzul">#2196f3</color>
+    <color name="colorPrimaryDarkAzul">#1b75b2</color>
+
+    <color name="colorPrimaryAmarelo">#ffa000</color>
+    <color name="colorPrimaryDarkAmarelo">#bc6f00</color>
+    <color name="primary_text_default_material_light">#decccccc</color>
+</resources>
