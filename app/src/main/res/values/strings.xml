@@ -14,4 +14,5 @@
     <string name="txt_sobre">Sobre</string>
     <string name="txt_feedback">Feedback</string>
     <string name="txt_compartilhar_app">Compartilhar APP</string>
+    <string name="title_activity_favoritos">Favoritos</string>
 </resources>

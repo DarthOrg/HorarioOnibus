@@ -18,7 +18,14 @@
         <activity
             android:name=".HorarioOnibus"
             android:label="@string/title_activity_horario_onibus"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".Favoritos"
+            android:label="@string/txt_favoritos"
+            android:theme="@style/ThemeSplash">
+
+        </activity>
     </application>
 
 </manifest>
