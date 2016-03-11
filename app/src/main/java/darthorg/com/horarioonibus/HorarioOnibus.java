@@ -90,7 +90,7 @@ public class HorarioOnibus extends AppCompatActivity
 
         } else if (id == R.id.nav_configuracoes) {
 
-        } else if (id == R.id.nav_compartilhar) {
+        } else if (id == R.id.nav_compartilhar_app) {
 
         } else if (id == R.id.nav_sobre) {
 
