@@ -7,7 +7,7 @@ import android.os.Bundle;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class activity_splash extends AppCompatActivity {
+public class Splash extends AppCompatActivity {
 
     private long splash = 2000;
 
@@ -22,10 +22,10 @@ public class activity_splash extends AppCompatActivity {
             @Override
             public void run() {
                 Intent ProximaTela;
-                ProximaTela = new Intent(activity_splash.this,HorarioOnibus.class);
+                ProximaTela = new Intent(Splash.this,HorarioOnibus.class);
                 startActivity(ProximaTela);
 
-                activity_splash.this.finish();
+                Splash.this.finish();
             }
         };
 
