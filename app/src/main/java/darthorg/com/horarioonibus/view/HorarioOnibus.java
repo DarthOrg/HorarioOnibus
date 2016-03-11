@@ -1,4 +1,4 @@
-package darthorg.com.horarioonibus;
+package darthorg.com.horarioonibus.view;
 
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -9,6 +9,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import darthorg.com.horarioonibus.R;
 
 public class HorarioOnibus extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {

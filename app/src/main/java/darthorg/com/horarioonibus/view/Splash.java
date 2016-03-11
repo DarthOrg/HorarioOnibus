@@ -1,4 +1,4 @@
-package darthorg.com.horarioonibus;
+package darthorg.com.horarioonibus.view;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,8 @@ import android.os.Bundle;
 
 import java.util.Timer;
 import java.util.TimerTask;
+
+import darthorg.com.horarioonibus.R;
 
 public class Splash extends AppCompatActivity {
 
