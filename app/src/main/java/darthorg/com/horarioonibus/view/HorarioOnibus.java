@@ -42,7 +42,9 @@ public class HorarioOnibus extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
     }
+
 
     @Override
     public void onBackPressed() {
@@ -94,8 +96,7 @@ public class HorarioOnibus extends AppCompatActivity
         } else if (id == R.id.nav_favoritos) {
 
 
-            Intent intent = new Intent(Intent.ACTION_VIEW);
-            intent.setData(Uri.parse("https://www.google.com.br"));
+            Intent intent = new Intent(this,Favoritos.class);
             startActivity(intent);
 
         } else if (id == R.id.nav_temas) {
