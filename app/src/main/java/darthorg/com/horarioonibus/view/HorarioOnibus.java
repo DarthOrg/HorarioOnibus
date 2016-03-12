@@ -1,5 +1,7 @@
 package darthorg.com.horarioonibus.view;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -70,7 +72,10 @@ public class HorarioOnibus extends AppCompatActivity
         if (id == R.id.action_configuracoes) {
             return true;
         }else if (id == R.id.action_favoritos) {
-            return true;
+
+            Intent intent = new Intent(this,Favoritos.class);
+            startActivity(intent);
+
         }else if (id == R.id.action_pesquisar) {
             return true;
         }
@@ -87,6 +92,11 @@ public class HorarioOnibus extends AppCompatActivity
         if (id == R.id.nav_horarios) {
             // Handle the camera action
         } else if (id == R.id.nav_favoritos) {
+
+
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse("https://www.google.com.br"));
+            startActivity(intent);
 
         } else if (id == R.id.nav_temas) {
 
