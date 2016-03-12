@@ -8,4 +8,11 @@
         <item name="android:navigationBarColor">@color/colorPrimary</item>
         <item name="colorPrimary">@color/colorPrimary</item>
     </style>
+
+    <style name="ThemeFavoritos" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/colorAccentDark</item>
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorAccentDark</item>
+        <item name="android:navigationBarColor">@color/colorAccent</item>
+    </style>
 </resources>
