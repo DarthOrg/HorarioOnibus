@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#1e2433</color>
 
     <color name="colorFundoBranco">#f7f7f8</color>
+    <color name="colorBranco">#FFFFFF</color>
 
     <color name="colorAccent">#cc0d23</color>
     <color name="colorAccentDark">#aa0e25</color>
@@ -16,5 +17,6 @@
 
     <color name="colorPrimaryAmarelo">#ffa000</color>
     <color name="colorPrimaryDarkAmarelo">#bc6f00</color>
-    <color name="primary_text_default_material_light">#decccccc</color>
+    <color name="primary_text_default_material_light">#deffffff</color>
+    <color name="foreground_material_light">#e0e0e0</color>
 </resources>
