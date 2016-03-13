@@ -71,9 +71,7 @@ public class HorarioOnibus extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_configuracoes) {
-            return true;
-        }else if (id == R.id.action_favoritos) {
+        if (id == R.id.action_favoritos) {
 
             Intent intent = new Intent(this,Favoritos.class);
             startActivity(intent);
