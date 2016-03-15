@@ -12,10 +12,12 @@
     <style name="ThemeFavoritos" parent="ThemeSplash">
         <item name="colorPrimaryDark">@color/colorAccentDark</item>
         <item name="colorPrimary">@color/colorAccent</item>
-        <item name="android:statusBarColor">@color/colorAccentDark</item>
-        <item name="android:navigationBarColor">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:colorForeground">@color/foreground_material_light</item>
         <item name="android:colorBackground">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/colorBranco</item>
+        <item name="android:textColorSecondary">@color/colorBranco</item>
     </style>
 </resources>

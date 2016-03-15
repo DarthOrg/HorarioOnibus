@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#2f3853</color>
-    <color name="colorPrimaryDark">#1e2433</color>
+    <color name="colorPrimary">#424242</color>
+    <color name="colorPrimaryDark">#212121</color>
 
-    <color name="colorFundoBranco">#f7f7f8</color>
+    <color name="colorFundoBranco">#BDBDBD</color>
     <color name="colorBranco">#FFFFFF</color>
+    <color name="colorPrimaryTexto">#212121</color>
+    <color name="colorSecundaryTexto">#585858</color>
 
-    <color name="colorAccent">#cc0d23</color>
-    <color name="colorAccentDark">#aa0e25</color>
+    <color name="colorAccent">#D32F2F</color>
+    <color name="colorAccentDark">#D32F2F</color>
 
-    <color name="colorPrimaryVermelho">#f44336</color>
-    <color name="colorPrimaryDarkVermelho">#b23330</color>
+    <color name="colorPrimaryVermelho">#F44336</color>
+    <color name="colorPrimaryDarkVermelho">#D32F2F</color>
 
-    <color name="colorPrimaryAzul">#2196f3</color>
-    <color name="colorPrimaryDarkAzul">#1b75b2</color>
+    <color name="colorPrimaryAzul">#2196F3</color>
+    <color name="colorPrimaryDarkAzul">#1976D2</color>
 
-    <color name="colorPrimaryAmarelo">#ffa000</color>
-    <color name="colorPrimaryDarkAmarelo">#bc6f00</color>
+    <color name="colorPrimaryAmarelo">#FFC107</color>
+    <color name="colorPrimaryDarkAmarelo">#FFA000</color>
     <color name="primary_text_default_material_light">#deffffff</color>
     <color name="foreground_material_light">#e0e0e0</color>
 </resources>

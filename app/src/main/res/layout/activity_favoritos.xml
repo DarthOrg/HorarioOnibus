@@ -15,9 +15,19 @@
             android:layout_width="match_parent"
             android:minHeight="?attr/actionBarSize"
             android:layout_alignParentLeft="true"
-            android:layout_margin="8dp"
+            android:layout_marginBottom="8dp"
             android:background="@drawable/toobar_rounded_corners"
             app:theme="@style/ThemeFavoritos"/>
+
+    <ListView
+        android:paddingTop="60dp"
+        android:dividerHeight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/lvLinhasFavoritos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
 
 
 </RelativeLayout>

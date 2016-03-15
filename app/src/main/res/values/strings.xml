@@ -5,6 +5,7 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
+    <string name="nomeCompleto">Nome Sobrenome</string>
     <string name="action_configuracoes">Configurações</string>
     <string name="txt_horario">Horários</string>
     <string name="txt_favoritos">Linhas Favoritas</string>
@@ -16,4 +17,6 @@
     <string name="txt_compartilhar_app">Compartilhar APP</string>
     <string name="title_activity_favoritos">Favoritos</string>
     <string name="txt_pesquisar">Pesquisar</string>
+    <string name="main">mainFrag</string>
+    <string name="pesquisar_hint">Pesquisar...</string>
 </resources>
