@@ -3,18 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="16dp"
-    android:weightSum="4"
-    app:cardCornerRadius="2dp">
+    android:orientation="vertical">
 
     <!-- PAIZÃO -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@color/colorBranco"
-        android:weightSum="1">
+        android:orientation="horizontal">
 
 
         <LinearLayout
@@ -79,6 +74,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Tipo da Linha"
+                    android:layout_marginTop="5dp"
                     android:textColor="@color/colorSecundaryTexto"
                     android:textSize="12dp"
                     android:gravity="bottom" />
