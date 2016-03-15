@@ -1,7 +1,7 @@
 package darthorg.com.horarioonibus.view;
 
+
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -11,11 +11,88 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
+
+import java.util.Arrays;
+import java.util.List;
 
 import darthorg.com.horarioonibus.R;
 
 public class HorarioOnibus extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    List<String> numeroLinha = Arrays.asList("087",
+            "073",
+            "218",
+            "219",
+            "191",
+            "217",
+            "087",
+            "073",
+            "218",
+            "219",
+            "191",
+            "217",
+            "087",
+            "073",
+            "218",
+            "219",
+            "191",
+            "217",
+            "087",
+            "073",
+            "218",
+            "219",
+            "191",
+            "217");
+    List<String> nomeLinha = Arrays.asList("Guaicurus / Gen. Osório",
+            "Nova Bahia / Julio de Castilho",
+            "Monte castelo",
+            "Octávio Pécora",
+            "Moreninha Shopping",
+            "Bosque de Avilã",
+            "Guaicurus / Gen. Osório",
+            "Nova Bahia / Julio de Castilho",
+            "Monte castelo",
+            "Octávio Pécora",
+            "Moreninha Shopping",
+            "Bosque de Avilã",
+            "Guaicurus / Gen. Osório",
+            "Nova Bahia / Julio de Castilho",
+            "Monte castelo",
+            "Octávio Pécora",
+            "Moreninha Shopping",
+            "Bosque de Avilã",
+            "Guaicurus / Gen. Osório",
+            "Nova Bahia / Julio de Castilho",
+            "Monte castelo",
+            "Octávio Pécora",
+            "Moreninha Shopping",
+            "Bosque de Avilã");
+    List<String> tipoLinha = Arrays.asList("Linha Vermelha",
+            "Linha Vermelha",
+            "Linha Vermelha",
+            "Linha Excutiva",
+            "Linha Azul",
+            "Linha Vermelha",
+            "Linha Vermelha",
+            "Linha Vermelha",
+            "Linha Excutiva",
+            "Linha Azul",
+            "Linha Vermelha",
+            "Linha Vermelha",
+            "Linha Vermelha",
+            "Linha Excutiva",
+            "Linha Azul",
+            "Linha Vermelha",
+            "Linha Vermelha",
+            "Linha Vermelha",
+            "Linha Excutiva",
+            "Linha Azul");
+
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,15 +101,13 @@ public class HorarioOnibus extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        //não está no projeto então só comentei ´pra não excluir caso precise-( :D )
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
+        ListView lvPosts = (ListView) findViewById(R.id.lvLinhas);
+        AdapterLinhas adapterLinhas = new AdapterLinhas(nomeLinha, tipoLinha, numeroLinha, this);
+        lvPosts.setAdapter(adapterLinhas);
+
+
+        final  NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -40,8 +115,7 @@ public class HorarioOnibus extends AppCompatActivity
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
+
 
     }
 
@@ -54,7 +128,11 @@ public class HorarioOnibus extends AppCompatActivity
         } else {
             super.onBackPressed();
         }
+
     }
+
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -113,4 +191,5 @@ public class HorarioOnibus extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
 }

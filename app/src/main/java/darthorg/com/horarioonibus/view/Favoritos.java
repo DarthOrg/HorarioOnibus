@@ -1,21 +1,90 @@
 package darthorg.com.horarioonibus.view;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
-import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
+import android.widget.ListView;
+
+import java.util.Arrays;
+import java.util.List;
 
 import darthorg.com.horarioonibus.R;
 
 public class Favoritos extends AppCompatActivity {
+    List<String> numeroLinha = Arrays.asList("087",
+            "073",
+            "218",
+            "219",
+            "191",
+            "217",
+            "087",
+            "073",
+            "218",
+            "219",
+            "191",
+            "217",
+            "087",
+            "073",
+            "218",
+            "219",
+            "191",
+            "217",
+            "087",
+            "073",
+            "218",
+            "219",
+            "191",
+            "217");
+    List<String> nomeLinha = Arrays.asList("Guaicurus / Gen. Osório",
+            "Nova Bahia / Julio de Castilho",
+            "Monte castelo",
+            "Octávio Pécora",
+            "Moreninha Shopping",
+            "Bosque de Avilã",
+            "Guaicurus / Gen. Osório",
+            "Nova Bahia / Julio de Castilho",
+            "Monte castelo",
+            "Octávio Pécora",
+            "Moreninha Shopping",
+            "Bosque de Avilã",
+            "Guaicurus / Gen. Osório",
+            "Nova Bahia / Julio de Castilho",
+            "Monte castelo",
+            "Octávio Pécora",
+            "Moreninha Shopping",
+            "Bosque de Avilã",
+            "Guaicurus / Gen. Osório",
+            "Nova Bahia / Julio de Castilho",
+            "Monte castelo",
+            "Octávio Pécora",
+            "Moreninha Shopping",
+            "Bosque de Avilã");
+    List<String> tipoLinha = Arrays.asList("Linha Vermelha",
+            "Linha Vermelha",
+            "Linha Vermelha",
+            "Linha Excutiva",
+            "Linha Azul",
+            "Linha Vermelha",
+            "Linha Vermelha",
+            "Linha Vermelha",
+            "Linha Excutiva",
+            "Linha Azul",
+            "Linha Vermelha",
+            "Linha Vermelha",
+            "Linha Vermelha",
+            "Linha Excutiva",
+            "Linha Azul",
+            "Linha Vermelha",
+            "Linha Vermelha",
+            "Linha Vermelha",
+            "Linha Excutiva",
+            "Linha Azul");
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,19 +94,15 @@ public class Favoritos extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("Linhas Favoritas");
         setSupportActionBar(toolbar);
+
+        ListView lvPosts = (ListView) findViewById(R.id.lvLinhasFavoritos);
+        AdapterLinhasFavoritos adapterLinhasFavoritos = new AdapterLinhasFavoritos(nomeLinha, tipoLinha, numeroLinha, this);
+        lvPosts.setAdapter(adapterLinhasFavoritos);
+
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
-
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
