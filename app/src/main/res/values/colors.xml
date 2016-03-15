@@ -1,24 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#2f3853</color>
-    <color name="colorPrimaryDark">#1e2433</color>
 
-    <color name="colorFundoBranco">#c2c3c9</color>
-    <color name="colorBranco">#f7f7f8</color>
-    <color name="colorPrimaryTexto">#212121</color>
-    <color name="colorSecundaryTexto">#585858</color>
+    <!--COR FUNDO E STATUS BAR BRANCO-->
+    <color name="colorWhiteDark">#616161</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhiteBackground">#e6e6e6</color>
 
+    <color name="colorPrimary">#00a7c7</color>
+    <color name="colorPrimaryDark">#00859f</color>
+
+    <!--COR DE DESTAQUE-->
     <color name="colorAccent">#cc0d23</color>
-    <color name="colorAccentDark">#cc0d23</color>
 
-    <color name="colorPrimaryVermelho">#F44336</color>
-    <color name="colorPrimaryDarkVermelho">#D32F2F</color>
-
-    <color name="colorPrimaryAzul">#2196F3</color>
-    <color name="colorPrimaryDarkAzul">#1976D2</color>
-
-    <color name="colorPrimaryAmarelo">#FFC107</color>
-    <color name="colorPrimaryDarkAmarelo">#FFA000</color>
-    <color name="primary_text_default_material_light">#deffffff</color>
-    <color name="foreground_material_light">#e0e0e0</color>
+    <!--COR DO TEXTO E ICONES-->
+    <color name="textColorPrimary">#616161</color>
+    <color name="textColorSecundary">#c2c3c9</color>
 </resources>

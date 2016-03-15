@@ -3,49 +3,46 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="16dp"
-    android:weightSum="4"
-    app:cardCornerRadius="2dp">
+    android:orientation="vertical">
 
     <!-- PAIZÃO -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@color/colorBranco"
-        android:weightSum="1">
+        android:orientation="horizontal">
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="top">
-
+            android:gravity="top"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
 
 
             <FrameLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
-                <FrameLayout
-                    android:layout_width="65dp"
+                <ImageButton
+                    android:id="@+id/imgLinha"
+                    android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:background="@color/colorPrimaryAzul"
-                    android:layout_gravity="left">
-
-                </FrameLayout>
+                    android:background="@drawable/ic_fundo_img_linha"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp" />
 
                 <TextView
                     android:id="@+id/txtNumeroLinha"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="000"
-                    android:textColor="@color/colorBranco"
+                    android:textColor="@color/colorWhite"
                     android:textSize="20dp"
                     android:gravity="bottom"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp" />
 
 
 
@@ -65,7 +62,7 @@
                     android:layout_height="wrap_content"
                     android:text="Nome da Linha do Onibus correto"
                     android:textSize="14dp"
-                    android:textColor="@color/colorPrimaryTexto"
+                    android:textColor="@color/textColorPrimary"
                     android:layout_marginTop="15dp" />
 
                 <TextView
@@ -74,10 +71,9 @@
                     android:layout_height="wrap_content"
                     android:text="Tipo da Linha"
                     android:layout_marginTop="5dp"
-                    android:textColor="@color/colorSecundaryTexto"
+                    android:textColor="@color/colorPrimary"
                     android:textSize="12dp"
                     android:gravity="bottom" />
-
             </LinearLayout>
 
             <!-- BOTAOZINHO CHATO LATERAL DIREITA -->
@@ -87,7 +83,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="12dp"
                 android:background="#00ffffff"
-                android:src="@drawable/ic_favoritos_vermelho"
+                android:src="@drawable/ic_delete"
                 android:layout_gravity="center" />
 
         </LinearLayout>

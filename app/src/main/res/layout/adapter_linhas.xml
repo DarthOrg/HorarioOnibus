@@ -9,6 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
         android:orientation="horizontal">
 
 
@@ -29,7 +30,7 @@
                     android:id="@+id/imgLinha"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:background="@mipmap/ic_fundo_n_l"
+                    android:background="@drawable/ic_fundo_img_linha_dois"
                     android:layout_gravity="center"
                     android:layout_marginLeft="5dp" />
 
@@ -38,17 +39,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="000"
-                    android:textColor="@color/colorBranco"
+                    android:textColor="@color/colorWhite"
                     android:textSize="20dp"
                     android:gravity="bottom"
                     android:layout_gravity="center"
                     android:layout_marginLeft="5dp" />
 
-                <FrameLayout
-                    android:layout_width="5dp"
-                    android:layout_height="70dp"
-                    android:background="@color/colorAccent"
-                    android:layout_gravity="left"></FrameLayout>
+
 
             </FrameLayout>
 
@@ -66,7 +63,7 @@
                     android:layout_height="wrap_content"
                     android:text="Nome da Linha do Onibus correto"
                     android:textSize="14dp"
-                    android:textColor="@color/colorPrimaryTexto"
+                    android:textColor="@color/textColorPrimary"
                     android:layout_marginTop="15dp" />
 
                 <TextView
@@ -75,7 +72,7 @@
                     android:layout_height="wrap_content"
                     android:text="Tipo da Linha"
                     android:layout_marginTop="5dp"
-                    android:textColor="@color/colorSecundaryTexto"
+                    android:textColor="@color/colorAccent"
                     android:textSize="12dp"
                     android:gravity="bottom" />
             </LinearLayout>
@@ -87,7 +84,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="12dp"
                 android:background="#00ffffff"
-                android:src="@drawable/ic_favoritos_cinza"
+                android:src="@drawable/ic_favoritos"
                 android:layout_gravity="center" />
 
         </LinearLayout>
