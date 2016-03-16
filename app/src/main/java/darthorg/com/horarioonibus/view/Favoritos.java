@@ -1,89 +1,25 @@
 package darthorg.com.horarioonibus.view;
 
 import android.os.Bundle;
-import android.support.design.widget.NavigationView;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListView;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
 
 import darthorg.com.horarioonibus.R;
+import darthorg.com.horarioonibus.model.Linha;
 
 public class Favoritos extends AppCompatActivity {
-    List<String> numeroLinha = Arrays.asList("087",
-            "073",
-            "218",
-            "219",
-            "191",
-            "217",
-            "087",
-            "073",
-            "218",
-            "219",
-            "191",
-            "217",
-            "087",
-            "073",
-            "218",
-            "219",
-            "191",
-            "217",
-            "087",
-            "073",
-            "218",
-            "219",
-            "191",
-            "217");
-    List<String> nomeLinha = Arrays.asList("Guaicurus / Gen. Osório",
-            "Nova Bahia / Julio de Castilho",
-            "Monte castelo",
-            "Octávio Pécora",
-            "Moreninha Shopping",
-            "Bosque de Avilã",
-            "Guaicurus / Gen. Osório",
-            "Nova Bahia / Julio de Castilho",
-            "Monte castelo",
-            "Octávio Pécora",
-            "Moreninha Shopping",
-            "Bosque de Avilã",
-            "Guaicurus / Gen. Osório",
-            "Nova Bahia / Julio de Castilho",
-            "Monte castelo",
-            "Octávio Pécora",
-            "Moreninha Shopping",
-            "Bosque de Avilã",
-            "Guaicurus / Gen. Osório",
-            "Nova Bahia / Julio de Castilho",
-            "Monte castelo",
-            "Octávio Pécora",
-            "Moreninha Shopping",
-            "Bosque de Avilã");
-    List<String> tipoLinha = Arrays.asList("Linha Vermelha",
-            "Linha Vermelha",
-            "Linha Vermelha",
-            "Linha Excutiva",
-            "Linha Azul",
-            "Linha Vermelha",
-            "Linha Vermelha",
-            "Linha Vermelha",
-            "Linha Excutiva",
-            "Linha Azul",
-            "Linha Vermelha",
-            "Linha Vermelha",
-            "Linha Vermelha",
-            "Linha Excutiva",
-            "Linha Azul",
-            "Linha Vermelha",
-            "Linha Vermelha",
-            "Linha Vermelha",
-            "Linha Excutiva",
-            "Linha Azul");
+
+    List<Linha> linhas = new ArrayList<>();
+
+    Linha linhaAtoa = new Linha("080", "Linha Vermelha", "General Osório");
+    Linha linhaAtoa2 = new Linha("020", "Linha Azul", "Lagoa da Cruz");
+    Linha linhaAtoa3 = new Linha("301", "Linha Executiva", "Onibus executivo");
 
 
     @Override
@@ -95,9 +31,21 @@ public class Favoritos extends AppCompatActivity {
         toolbar.setTitle("Linhas Favoritas");
         setSupportActionBar(toolbar);
 
-        ListView lvPosts = (ListView) findViewById(R.id.lvLinhasFavoritos);
-        AdapterLinhasFavoritos adapterLinhasFavoritos = new AdapterLinhasFavoritos(nomeLinha, tipoLinha, numeroLinha, this);
-        lvPosts.setAdapter(adapterLinhasFavoritos);
+        ListView lvLinhasFavoritos = (ListView) findViewById(R.id.lvLinhasFavoritos);
+
+        AdapterLinhasFavoritos adapterLinhas = new AdapterLinhasFavoritos(linhas,this);
+        lvLinhasFavoritos.setAdapter(adapterLinhas);
+
+
+        linhas.add(linhaAtoa);
+        linhas.add(linhaAtoa2);
+        linhas.add(linhaAtoa3);
+        linhas.add(linhaAtoa);
+        linhas.add(linhaAtoa2);
+        linhas.add(linhaAtoa3);
+        linhas.add(linhaAtoa);
+        linhas.add(linhaAtoa2);
+        linhas.add(linhaAtoa3);
 
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -121,7 +69,7 @@ public class Favoritos extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_pesquisar) {
             return true;
-        }else if (id == android.R.id.home) {
+        } else if (id == android.R.id.home) {
             finish();
         }
 

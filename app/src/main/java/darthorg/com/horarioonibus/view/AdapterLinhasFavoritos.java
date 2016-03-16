@@ -11,35 +11,33 @@ import android.widget.TextView;
 import java.util.List;
 
 import darthorg.com.horarioonibus.R;
+import darthorg.com.horarioonibus.model.Linha;
 
 /**
  * Created by Gustavo on 08/03/2016.
  */
 public class AdapterLinhasFavoritos extends BaseAdapter {
 
-    List<String> listNomeLinha;
-    List<String> listTipoLinha;
-    List<String> listNumeroLinha;
+    List<Linha> linhas;
 
+    private Context context;
     private LayoutInflater inflater;
 
-    public AdapterLinhasFavoritos(List<String> listNomeLinha, List<String> listTipoLinha, List<String> listNumeroLinha, Context context) {
-
-        this.listNomeLinha = listNomeLinha;
-        this.listTipoLinha = listTipoLinha;
-        this.listNumeroLinha = listNumeroLinha;
+    public AdapterLinhasFavoritos(List<Linha> linhas, Context context) {
+        this.linhas = linhas;
+        this.context = context;
 
         this.inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
     }
 
     @Override
     public int getCount() {
-        return listTipoLinha.size();
+        return linhas.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return listTipoLinha.get(position);
+        return linhas.get(position);
     }
 
     @Override
@@ -52,22 +50,33 @@ public class AdapterLinhasFavoritos extends BaseAdapter {
 
         View v = inflater.inflate(R.layout.adapter_linhas_favoritos, null);
 
-          // TODO: Dar um jeito de trazer as imagens  08/03/2016
+        // TODO: Dar um jeito de trazer as imagens  08/03/2016
 
         TextView txtNomeLinha = (TextView) v.findViewById(R.id.txtNomeLinha);
-        txtNomeLinha.setText(listNomeLinha.get(position));
+        txtNomeLinha.setText(linhas.get(position).getNomeLinha());
 
         TextView txtTipoLinha = (TextView) v.findViewById(R.id.txtTipoLinha);
-        txtTipoLinha.setText(listTipoLinha.get(position));
+        txtTipoLinha.setText(linhas.get(position).getTipoLinha());
 
         // TODO: Dar um jeito de trazer as imagens  08/03/2016
         ImageView imgLinha = (ImageView) v.findViewById(R.id.imgLinha);
 
         TextView txtNumeroLinha = (TextView) v.findViewById(R.id.txtNumeroLinha);
-        txtNumeroLinha.setText(listNumeroLinha.get(position));
+        txtNumeroLinha.setText(linhas.get(position).getNumeroLinha());
 
         // TODO: Dar um jeito de trazer as imagens  08/03/2016
         ImageView btnFavoritos = (ImageView) v.findViewById(R.id.btnFavoritos);
+
+        if (linhas.get(position).getTipoLinha() == "Linha Vermelha") {
+            txtTipoLinha.setTextColor(v.getResources().getColor(R.color.colorLinhaVermelha));
+            imgLinha.setBackgroundColor(v.getResources().getColor(R.color.colorLinhaVermelha));
+        } else if (linhas.get(position).getTipoLinha() == "Linha Azul") {
+            txtTipoLinha.setTextColor(v.getResources().getColor(R.color.colorLinhaAzul));
+            imgLinha.setBackgroundColor(v.getResources().getColor(R.color.colorLinhaAzul));
+        } else if (linhas.get(position).getTipoLinha() == "Linha Executiva") {
+            txtTipoLinha.setTextColor(v.getResources().getColor(R.color.colorLinhaExecutiva));
+            imgLinha.setBackgroundColor(v.getResources().getColor(R.color.colorLinhaExecutiva));
+        }
 
 
         return v;
