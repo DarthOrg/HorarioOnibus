@@ -22,84 +22,11 @@ import darthorg.com.horarioonibus.model.Linha;
 public class HorarioOnibus extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-//    List<String> numeroLinha = Arrays.asList("087",
-//            "073",
-//            "218",
-//            "219",
-//            "191",
-//            "217",
-//            "087",
-//            "073",
-//            "218",
-//            "219",
-//            "191",
-//            "217",
-//            "087",
-//            "073",
-//            "218",
-//            "219",
-//            "191",
-//            "217",
-//            "087",
-//            "073",
-//            "218",
-//            "219",
-//            "191",
-//            "217");
-//    List<String> nomeLinha = Arrays.asList("Guaicurus / Gen. Osório",
-//            "Nova Bahia / Julio de Castilho",
-//            "Monte castelo",
-//            "Octávio Pécora",
-//            "Moreninha Shopping",
-//            "Bosque de Avilã",
-//            "Guaicurus / Gen. Osório",
-//            "Nova Bahia / Julio de Castilho",
-//            "Monte castelo",
-//            "Octávio Pécora",
-//            "Moreninha Shopping",
-//            "Bosque de Avilã",
-//            "Guaicurus / Gen. Osório",
-//            "Nova Bahia / Julio de Castilho",
-//            "Monte castelo",
-//            "Octávio Pécora",
-//            "Moreninha Shopping",
-//            "Bosque de Avilã",
-//            "Guaicurus / Gen. Osório",
-//            "Nova Bahia / Julio de Castilho",
-//            "Monte castelo",
-//            "Octávio Pécora",
-//            "Moreninha Shopping",
-//            "Bosque de Avilã");
-//    List<String> tipoLinha = Arrays.asList("Linha Vermelha",
-//            "Linha Vermelha",
-//            "Linha Vermelha",
-//            "Linha Excutiva",
-//            "Linha Azul",
-//            "Linha Vermelha",
-//            "Linha Vermelha",
-//            "Linha Vermelha",
-//            "Linha Excutiva",
-//            "Linha Azul",
-//            "Linha Vermelha",
-//            "Linha Vermelha",
-//            "Linha Vermelha",
-//            "Linha Excutiva",
-//            "Linha Azul",
-//            "Linha Vermelha",
-//            "Linha Vermelha",
-//            "Linha Vermelha",
-//            "Linha Excutiva",
-//            "Linha Azul");
-
     List<Linha> linhas = new ArrayList<>();
 
     Linha linhaAtoa = new Linha( "080","Linha Vermelha","General Osório");
     Linha linhaAtoa2 = new Linha( "020","Linha Azul","Lagoa da Cruz");
     Linha linhaAtoa3 = new Linha( "301","Linha Executiva","Onibus executivo");
-
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -110,10 +37,6 @@ public class HorarioOnibus extends AppCompatActivity
 
         ListView lvPosts = (ListView) findViewById(R.id.lvLinhas);
 
-//        AdapterLinhas adapterLinhas = new AdapterLinhas(nomeLinha, tipoLinha, numeroLinha, this);
-//        lvPosts.setAdapter(adapterLinhas);
-
-
         final  NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
@@ -123,6 +46,7 @@ public class HorarioOnibus extends AppCompatActivity
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
+        //Adicionando os Objetos Linha na lista de Linhas
 
         linhas.add(linhaAtoa);
         linhas.add(linhaAtoa2);
@@ -131,6 +55,7 @@ public class HorarioOnibus extends AppCompatActivity
         linhas.add(linhaAtoa2);
         linhas.add(linhaAtoa3);
 
+        // Configurando a lista de Linhas no Adapter de Linhas
         AdapterLinhas adapterLinhas = new AdapterLinhas(linhas,this);
         lvPosts.setAdapter(adapterLinhas);
 
