@@ -52,7 +52,6 @@ public class AdapterLinhas extends BaseAdapter {
 
         View v = inflater.inflate(R.layout.adapter_linhas, null);
 
-          // TODO: Dar um jeito de trazer as imagens  08/03/2016
 
         TextView txtNomeLinha = (TextView) v.findViewById(R.id.txtNomeLinha);
         txtNomeLinha.setText(listNomeLinha.get(position));

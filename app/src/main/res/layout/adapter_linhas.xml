@@ -2,25 +2,18 @@
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:layout_height="wrap_content">
+
 
     <!-- PAIZÃO -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorWhite"
-        android:orientation="horizontal">
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
             android:orientation="horizontal"
-            android:gravity="top"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp">
-
+            android:padding="10dp">
 
             <FrameLayout
                 android:layout_width="wrap_content"
@@ -30,51 +23,51 @@
                     android:id="@+id/imgLinha"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:background="@drawable/ic_fundo_img_linha_dois"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="5dp" />
+                    android:background="@drawable/ic_fundo_img_linha_dois" />
 
                 <TextView
                     android:id="@+id/txtNumeroLinha"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="bottom"
                     android:text="000"
                     android:textColor="@color/colorWhite"
-                    android:textSize="20dp"
-                    android:gravity="bottom"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="5dp" />
-
+                    android:textSize="20dp" />
 
 
             </FrameLayout>
 
             <!-- AUTOR E DATA -->
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
                 android:layout_weight="2"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_gravity="center">
 
                 <TextView
                     android:id="@+id/txtNomeLinha"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:text="Nome da Linha do Onibus correto"
-                    android:textSize="14dp"
                     android:textColor="@color/textColorPrimary"
-                    android:layout_marginTop="15dp" />
+                    android:textSize="14dp" />
 
                 <TextView
                     android:id="@+id/txtTipoLinha"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:gravity="bottom"
                     android:text="Tipo da Linha"
-                    android:layout_marginTop="5dp"
                     android:textColor="@color/colorAccent"
-                    android:textSize="12dp"
-                    android:gravity="bottom" />
+                    android:textSize="12dp" />
+
+
             </LinearLayout>
 
             <!-- BOTAOZINHO CHATO LATERAL DIREITA -->
@@ -82,16 +75,14 @@
                 android:id="@+id/btnFavoritos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_margin="12dp"
                 android:background="#00ffffff"
-                android:src="@drawable/ic_favoritos"
-                android:layout_gravity="center" />
+                android:src="@drawable/ic_favoritos" />
 
         </LinearLayout>
 
-        <!-- LEGENDA FOTO OU CONTEÚDO POST -->
+    <!-- LEGENDA FOTO OU CONTEÚDO POST -->
 
-
-    </LinearLayout>
 
 </android.support.v7.widget.CardView>
