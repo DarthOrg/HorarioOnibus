@@ -15,4 +15,10 @@
     <!--COR DO TEXTO E ICONES-->
     <color name="textColorPrimary">#616161</color>
     <color name="textColorSecundary">#c2c3c9</color>
+
+    <!-- COR DAS LINHAS -->
+    <color name="colorLinhaAzul">#1474b4</color>
+    <color name="colorLinhaVermelha">#cc0d23</color>
+    <color name="colorLinhaExecutiva">#ffd900</color>
+
 </resources>

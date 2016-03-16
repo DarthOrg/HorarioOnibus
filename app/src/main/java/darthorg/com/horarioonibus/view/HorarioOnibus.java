@@ -93,8 +93,9 @@ public class HorarioOnibus extends AppCompatActivity
 
     List<Linha> linhas = new ArrayList<>();
 
-    Linha linhaAtoa = new Linha( "080","tipo de linha","OlocoMeu");
-    Linha linhaAtoa2 = new Linha( "089","tipo de linha","OlocoMeuBixo");
+    Linha linhaAtoa = new Linha( "080","Linha Vermelha","General Osório");
+    Linha linhaAtoa2 = new Linha( "020","Linha Azul","Lagoa da Cruz");
+    Linha linhaAtoa3 = new Linha( "301","Linha Executiva","Onibus executivo");
 
 
 
@@ -125,8 +126,10 @@ public class HorarioOnibus extends AppCompatActivity
 
         linhas.add(linhaAtoa);
         linhas.add(linhaAtoa2);
+        linhas.add(linhaAtoa3);
         linhas.add(linhaAtoa);
         linhas.add(linhaAtoa2);
+        linhas.add(linhaAtoa3);
 
         AdapterLinhas adapterLinhas = new AdapterLinhas(linhas,this);
         lvPosts.setAdapter(adapterLinhas);

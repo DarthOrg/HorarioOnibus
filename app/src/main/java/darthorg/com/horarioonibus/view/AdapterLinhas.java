@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -70,8 +71,10 @@ public class AdapterLinhas extends BaseAdapter {
         TextView txtTipoLinha = (TextView) v.findViewById(R.id.txtTipoLinha);
         txtTipoLinha.setText(linha.get(position).getTipoLinha());
 
+
         // TODO: Dar um jeito de trazer as imagens  08/03/2016
-        ImageView imgLinha = (ImageView) v.findViewById(R.id.imgLinha);
+        ImageButton imgLinha = (ImageButton) v.findViewById(R.id.imgLinha);
+
 
         TextView txtNumeroLinha = (TextView) v.findViewById(R.id.txtNumeroLinha);
         txtNumeroLinha.setText(linha.get(position).getNumeroLinha());
@@ -79,6 +82,16 @@ public class AdapterLinhas extends BaseAdapter {
         // TODO: Dar um jeito de trazer as imagens  08/03/2016
         ImageView btnFavoritos = (ImageView) v.findViewById(R.id.btnFavoritos);
 
+        if (linha.get(position).getTipoLinha() == "Linha Vermelha") {
+            txtTipoLinha.setTextColor(v.getResources().getColor(R.color.colorLinhaVermelha));
+            imgLinha.setBackgroundColor(v.getResources().getColor(R.color.colorLinhaVermelha));
+        } else if (linha.get(position).getTipoLinha() == "Linha Azul") {
+            txtTipoLinha.setTextColor(v.getResources().getColor(R.color.colorLinhaAzul));
+            imgLinha.setBackgroundColor(v.getResources().getColor(R.color.colorLinhaAzul));
+        } else if (linha.get(position).getTipoLinha() == "Linha Executiva") {
+            txtTipoLinha.setTextColor(v.getResources().getColor(R.color.colorLinhaExecutiva));
+            imgLinha.setBackgroundColor(v.getResources().getColor(R.color.colorLinhaExecutiva));
+        }
 
         return v;
     }
