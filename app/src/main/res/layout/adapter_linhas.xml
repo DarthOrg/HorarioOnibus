@@ -19,12 +19,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
+
                 <ImageButton
                     android:id="@+id/imgLinha"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
                     android:background="@drawable/ic_fundo_img_linha_dois" />
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/mascara"/>
 
                 <TextView
                     android:id="@+id/txtNumeroLinha"
