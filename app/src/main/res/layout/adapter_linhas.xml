@@ -12,78 +12,93 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorWhite"
-            android:orientation="horizontal"
-            android:padding="10dp">
+            android:orientation="horizontal">
 
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-
-                <ImageButton
-                    android:id="@+id/imgLinha"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/ic_fundo_img_linha_dois" />
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:src="@drawable/mascara"/>
-
-                <TextView
-                    android:id="@+id/txtNumeroLinha"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="bottom"
-                    android:text="000"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="20dp" />
-
-
-            </FrameLayout>
 
             <!-- AUTOR E DATA -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
-                android:layout_weight="2"
-                android:orientation="vertical"
-                android:layout_gravity="center">
-
-                <TextView
-                    android:id="@+id/txtNomeLinha"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="Nome da Linha do Onibus correto"
-                    android:textColor="@color/textColorPrimary"
-                    android:textSize="14dp" />
-
-                <TextView
-                    android:id="@+id/txtTipoLinha"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:gravity="bottom"
-                    android:text="Tipo da Linha"
-                    android:textColor="@color/colorAccent"
-                    android:textSize="12dp" />
-
-
-            </LinearLayout>
 
             <!-- BOTAOZINHO CHATO LATERAL DIREITA -->
-            <ImageButton
-                android:id="@+id/btnFavoritos"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="12dp"
-                android:background="#00ffffff"
-                android:src="@drawable/ic_favoritos" />
+
+            <FrameLayout
+                android:id="@+id/imgLinha"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#d81717"
+                android:paddingBottom="5dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    android:padding="5dp">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+
+                        <ImageButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/toobar_rounded_corners"
+                            android:layout_gravity="center" />
+
+
+                        <TextView
+                            android:id="@+id/txtNumeroLinha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="bottom"
+                            android:text="000"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="20dp" />
+
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:id="@+id/txtNomeLinha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Nome da Linha do Onibus correto"
+                            android:textColor="@color/textColorPrimary"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/txtTipoLinha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="bottom"
+                            android:text="Tipo da Linha"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/btnFavoritos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:background="#00ffffff"
+                        android:src="@drawable/ic_favoritos" />
+                </LinearLayout>
+            </FrameLayout>
 
         </LinearLayout>
 

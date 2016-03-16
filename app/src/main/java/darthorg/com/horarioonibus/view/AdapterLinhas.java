@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -73,7 +74,7 @@ public class AdapterLinhas extends BaseAdapter {
 
 
         // TODO: Dar um jeito de trazer as imagens  08/03/2016
-        ImageButton imgLinha = (ImageButton) v.findViewById(R.id.imgLinha);
+        FrameLayout imgLinha = (FrameLayout) v.findViewById(R.id.imgLinha);
 
 
         TextView txtNumeroLinha = (TextView) v.findViewById(R.id.txtNumeroLinha);

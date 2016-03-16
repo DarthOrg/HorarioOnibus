@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -59,7 +60,7 @@ public class AdapterLinhasFavoritos extends BaseAdapter {
         txtTipoLinha.setText(linhas.get(position).getTipoLinha());
 
         // TODO: Dar um jeito de trazer as imagens  08/03/2016
-        ImageView imgLinha = (ImageView) v.findViewById(R.id.imgLinha);
+        FrameLayout imgLinha = (FrameLayout) v.findViewById(R.id.imgLinha);
 
         TextView txtNumeroLinha = (TextView) v.findViewById(R.id.txtNumeroLinha);
         txtNumeroLinha.setText(linhas.get(position).getNumeroLinha());

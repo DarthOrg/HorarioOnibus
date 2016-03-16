@@ -17,8 +17,8 @@
     <color name="textColorSecundary">#c2c3c9</color>
 
     <!-- COR DAS LINHAS -->
-    <color name="colorLinhaAzul">#1474b4</color>
-    <color name="colorLinhaVermelha">#cc0d23</color>
-    <color name="colorLinhaExecutiva">#ffd900</color>
+    <color name="colorLinhaAzul">#4285F4</color>
+    <color name="colorLinhaVermelha">#EA4335</color>
+    <color name="colorLinhaExecutiva">#FBBC05</color>
 
 </resources>
