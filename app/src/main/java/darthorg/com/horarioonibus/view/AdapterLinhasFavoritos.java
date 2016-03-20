@@ -66,15 +66,15 @@ public class AdapterLinhasFavoritos extends BaseAdapter {
         txtNumeroLinha.setText(linhas.get(position).getNumeroLinha());
 
         // TODO: Dar um jeito de trazer as imagens  08/03/2016
-        ImageView btnFavoritos = (ImageView) v.findViewById(R.id.btnFavoritos);
+        ImageView btnFavoritos = (ImageView) v.findViewById(R.id.btnDeleteFavoritos);
 
-        if (linhas.get(position).getTipoLinha() == "Linha Vermelha") {
+        if (linhas.get(position).getTipoLinha() == "Centro") {
             txtTipoLinha.setTextColor(v.getResources().getColor(R.color.colorLinhaVermelha));
             imgLinha.setBackgroundColor(v.getResources().getColor(R.color.colorLinhaVermelha));
-        } else if (linhas.get(position).getTipoLinha() == "Linha Azul") {
+        } else if (linhas.get(position).getTipoLinha() == "Bairro") {
             txtTipoLinha.setTextColor(v.getResources().getColor(R.color.colorLinhaAzul));
             imgLinha.setBackgroundColor(v.getResources().getColor(R.color.colorLinhaAzul));
-        } else if (linhas.get(position).getTipoLinha() == "Linha Executiva") {
+        } else if (linhas.get(position).getTipoLinha() == "Executivo") {
             txtTipoLinha.setTextColor(v.getResources().getColor(R.color.colorLinhaExecutiva));
             imgLinha.setBackgroundColor(v.getResources().getColor(R.color.colorLinhaExecutiva));
         }

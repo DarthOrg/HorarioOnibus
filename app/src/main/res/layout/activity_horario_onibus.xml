@@ -6,11 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:openDrawer="close">
+    tools:openDrawer="start">
 
     <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
         android:fitsSystemWindows="true">
 
         <android.support.design.widget.AppBarLayout
@@ -32,13 +33,24 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Linhas de Ônibus"
+                android:textColor="@color/textColorPrimary"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/textView" />
+
             <ListView
-                android:layout_marginTop="56dp"
+                android:layout_marginTop="10dp"
                 android:padding="10dp"
                 android:dividerHeight="5dp"
                 android:id="@+id/lvLinhas"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="482dp"/>
 
 
         </LinearLayout>
@@ -50,11 +62,11 @@
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
-        app:itemTextColor="@color/colorPrimary"
-        app:itemIconTint="@color/colorPrimary"
+        app:itemTextColor="@color/textColorPrimary"
+        app:itemIconTint="@color/textColorPrimary"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="@color/colorWhite"
+        android:background="@color/colorPrimary"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_horario_onibus"
         app:menu="@menu/activity_horario_onibus_drawer" />

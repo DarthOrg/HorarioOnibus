@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--TEMA LIGTH-->
+    <color name="colorPrimary">#e6e6e6</color>
+    <color name="colorPrimaryDark">#616161</color>
 
-    <!--COR FUNDO E STATUS BAR BRANCO-->
-    <color name="colorWhiteDark">#616161</color>
-    <color name="colorWhite">#FFFFFF</color>
-    <color name="colorWhiteBackground">#e6e6e6</color>
-
-    <color name="colorPrimary">#00a7c7</color>
-    <color name="colorPrimaryDark">#00859f</color>
+    <!--TEMA DARK-->
+    <color name="colorPrimaryTemaEscuro">#303030</color>
+    <color name="colorPrimaryDarkTemaEscuro">#111111</color>
 
     <!--COR DE DESTAQUE-->
-    <color name="colorAccent">#cc0d23</color>
+    <color name="colorAccent">#00796B</color>
 
     <!--COR DO TEXTO E ICONES-->
     <color name="textColorPrimary">#616161</color>
     <color name="textColorSecundary">#c2c3c9</color>
+
+    <!--COR BRANCA CARDS-->
+    <color name="colorBranca">#FFFFFF</color>
 
     <!-- COR DAS LINHAS -->
     <color name="colorLinhaAzul">#4285F4</color>

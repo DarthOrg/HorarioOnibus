@@ -11,7 +11,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorWhite"
+            android:background="@color/colorBranca"
             android:orientation="horizontal">
 
 
@@ -30,7 +30,7 @@
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/colorWhite"
+                    android:background="@color/colorBranca"
                     android:padding="5dp">
 
                     <FrameLayout
@@ -42,7 +42,7 @@
                         <ImageButton
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:background="@drawable/toobar_rounded_corners"
+                            android:background="@color/colorBranca"
                             android:layout_gravity="center" />
 
 
@@ -53,7 +53,7 @@
                             android:layout_gravity="center"
                             android:gravity="bottom"
                             android:text="000"
-                            android:textColor="@color/colorWhite"
+                            android:textColor="@color/textColorPrimary"
                             android:textSize="20dp" />
 
 
@@ -90,13 +90,14 @@
                     </LinearLayout>
 
                     <ImageButton
-                        android:id="@+id/btnFavoritos"
+                        android:id="@+id/btnDeleteFavoritos"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_margin="8dp"
+                        android:tint="@color/textColorSecundary"
                         android:background="#00ffffff"
-                        android:src="@drawable/ic_favoritos" />
+                        android:src="@drawable/ic_favoritos_off" />
                 </LinearLayout>
             </FrameLayout>
 

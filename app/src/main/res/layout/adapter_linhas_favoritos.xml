@@ -9,93 +9,139 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorWhite"
-        android:orientation="horizontal">
+        android:background="@color/colorBranca"
+        android:orientation="vertical">
 
 
         <!-- AUTOR E DATA -->
 
         <!-- BOTAOZINHO CHATO LATERAL DIREITA -->
 
-        <FrameLayout
-            android:id="@+id/imgLinha"
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#d81717"
-            android:paddingBottom="5dp">
+            android:background="@color/colorBranca"
+            android:padding="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp">
 
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/colorWhite"
-                android:padding="5dp">
-
-                <FrameLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
 
-
-                    <ImageButton
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:background="@drawable/toobar_rounded_corners_destaque"
-                        android:layout_gravity="center" />
-
-
-                    <TextView
-                        android:id="@+id/txtNumeroLinha"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:gravity="bottom"
-                        android:text="000"
-                        android:textColor="@color/colorWhite"
-                        android:textSize="20dp" />
-
-
-                </FrameLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_weight="2"
-                    android:orientation="vertical"
-                    android:layout_gravity="center">
-
-                    <TextView
-                        android:id="@+id/txtNomeLinha"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="Nome da Linha do Onibus correto"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="14dp" />
-
-                    <TextView
-                        android:id="@+id/txtTipoLinha"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:gravity="bottom"
-                        android:text="Tipo da Linha"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="12dp" />
-
-
-                </LinearLayout>
 
                 <ImageButton
-                    android:id="@+id/btnFavoritos"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/colorBranca"
+                    android:layout_gravity="center" />
+
+
+                <TextView
+                    android:id="@+id/txtNumeroLinha"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_margin="8dp"
-                    android:background="#00ffffff"
-                    android:src="@drawable/ic_favoritos" />
+                    android:gravity="bottom"
+                    android:text="000"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20dp" />
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/txtNomeLinha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Nome da Linha do Onibus correto"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/txtTipoLinha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="bottom"
+                    android:text="Tipo da Linha"
+                    android:textColor="@color/colorBranca"
+                    android:textSize="12dp" />
+
+
             </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btnDeleteFavoritos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:tint="@color/colorLinhaVermelha"
+                android:layout_margin="8dp"
+                android:background="#00ffffff"
+                android:src="@drawable/ic_delete" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/imgLinha"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#d81717">
+
+
+
+            <ImageButton
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:tint="@color/colorBranca"
+                android:src="@drawable/ic_relogio_branco"
+                android:background="#00FFFFFF"
+                android:id="@+id/imageButton"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="top|left"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="9dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="04:20"
+                android:id="@+id/textView2"
+                android:layout_gravity="top|left|center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="32dp"
+                android:textColor="@color/colorBranca"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Está para passar!"
+                android:id="@+id/textView3"
+                android:layout_gravity="left|top"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="75dp"
+                android:textColor="@color/colorBranca"
+                android:backgroundTint="@color/colorBranca"
+                android:textSize="12dp" />
+
         </FrameLayout>
 
     </LinearLayout>

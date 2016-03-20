@@ -24,9 +24,9 @@ public class HorarioOnibus extends AppCompatActivity
 
     List<Linha> linhas = new ArrayList<>();
 
-    Linha linhaAtoa = new Linha( "080","Linha Vermelha","General Osório");
-    Linha linhaAtoa2 = new Linha( "020","Linha Azul","Lagoa da Cruz");
-    Linha linhaAtoa3 = new Linha( "301","Linha Executiva","Onibus executivo");
+    Linha linhaAtoa = new Linha( "080","Centro","General Osório");
+    Linha linhaAtoa2 = new Linha( "020","Bairro","Lagoa da Cruz");
+    Linha linhaAtoa3 = new Linha( "301","Executivo","Onibus executivo");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
