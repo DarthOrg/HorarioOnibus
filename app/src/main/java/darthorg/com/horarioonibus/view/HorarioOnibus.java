@@ -54,6 +54,9 @@ public class HorarioOnibus extends AppCompatActivity
         linhas.add(linhaAtoa);
         linhas.add(linhaAtoa2);
         linhas.add(linhaAtoa3);
+        linhas.add(linhaAtoa);
+        linhas.add(linhaAtoa2);
+        linhas.add(linhaAtoa3);
 
         // Configurando a lista de Linhas no Adapter de Linhas
         AdapterLinhas adapterLinhas = new AdapterLinhas(linhas,this);
