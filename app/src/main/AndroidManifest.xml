@@ -14,6 +14,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity
             android:name=".view.HorarioOnibus"
@@ -24,6 +25,14 @@
             android:name=".view.Favoritos"
             android:label="@string/txt_favoritos"
             android:theme="@style/ThemeFavoritos">
+
+
+        </activity>
+        <activity
+            android:name=".view.LinhasHorarios"
+            android:label="@string/txt_Linhas_Horarios"
+            android:theme="@style/ThemeFavoritos">
+
 
 
         </activity>

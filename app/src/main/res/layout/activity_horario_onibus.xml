@@ -40,17 +40,11 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="Linhas de Ônibus"
                 android:textColor="@color/textColorPrimary"
-                android:layout_marginTop="65dp"
-                android:layout_marginBottom="2dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="16dp"
                 android:id="@+id/textView" />
 
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="1dp"
-                android:layout_marginLeft="7dp"
-                android:layout_marginRight="7dp"
-                android:background="@color/colorPrimaryDark"/>
 
             <ListView
                 android:layout_marginTop="3dp"
@@ -60,6 +54,14 @@
                 android:id="@+id/lvLinhas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
+
+            <!--SE PRECISAR DE LINHA ESTÁ AQUI-->
+            <!--<View-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_marginLeft="7dp"-->
+                <!--android:layout_marginRight="7dp"-->
+                <!--android:background="@color/colorPrimaryDark"/>-->
 
 
         </LinearLayout>
