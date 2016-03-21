@@ -53,7 +53,8 @@
                 android:background="@color/colorPrimaryDark"/>
 
             <ListView
-                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
                 android:dividerHeight="5dp"
                 android:id="@+id/lvLinhas"
                 android:layout_width="match_parent"
