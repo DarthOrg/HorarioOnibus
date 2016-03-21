@@ -19,4 +19,6 @@
     <string name="txt_pesquisar">Pesquisar</string>
     <string name="main">mainFrag</string>
     <string name="pesquisar_hint">Pesquisar...</string>
+    <string name="add_Favoritos">Adicionar_Favoritos</string>
+    <string name="txt_Linhas_Horarios">Nome da linha do Ônibus</string>
 </resources>
