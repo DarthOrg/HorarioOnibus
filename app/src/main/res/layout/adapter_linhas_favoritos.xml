@@ -17,16 +17,15 @@
 
         <!-- BOTAOZINHO CHATO LATERAL DIREITA -->
 
+
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/colorBranca"
-            android:padding="10dp"
+            android:padding="5dp"
             android:layout_alignParentLeft="true"
-            android:layout_marginLeft="0dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="0dp">
+            android:layout_alignParentTop="true">
 
             <FrameLayout
                 android:layout_width="wrap_content"
@@ -66,20 +65,10 @@
                     android:id="@+id/txtNomeLinha"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="Nome da Linha do Onibus correto"
+                    android:text="Nome da Linha do Onibus correto Nome da Linha do Onibus correto"
                     android:textColor="@color/textColorPrimary"
-                    android:textSize="14dp" />
-
-                <TextView
-                    android:id="@+id/txtTipoLinha"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:gravity="bottom"
-                    android:text="Tipo da Linha"
-                    android:textColor="@color/colorBranca"
-                    android:textSize="12dp" />
+                    android:textSize="14dp"
+                    android:layout_marginTop="10dp" />
 
 
             </LinearLayout>
@@ -96,17 +85,16 @@
         </LinearLayout>
 
         <FrameLayout
-            android:id="@+id/imgLinha"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:background="#d81717">
+            android:background="@color/colorPrimary">
 
 
 
             <ImageButton
                 android:layout_width="15dp"
                 android:layout_height="15dp"
-                android:tint="@color/colorBranca"
+                android:tint="@color/textColorPrimary"
                 android:src="@drawable/ic_relogio_branco"
                 android:background="#00FFFFFF"
                 android:id="@+id/imageButton"
@@ -126,7 +114,7 @@
                 android:layout_gravity="top|left|center_vertical"
                 android:layout_marginTop="8dp"
                 android:layout_marginLeft="32dp"
-                android:textColor="@color/colorBranca"
+                android:textColor="@color/textColorPrimary"
                 android:textSize="12dp" />
 
             <TextView
@@ -138,11 +126,33 @@
                 android:layout_gravity="left|top"
                 android:layout_marginTop="8dp"
                 android:layout_marginLeft="75dp"
-                android:textColor="@color/colorBranca"
-                android:backgroundTint="@color/colorBranca"
+                android:textColor="@color/textColorPrimary"
                 android:textSize="12dp" />
 
+            <TextView
+                android:id="@+id/txtTipoLinha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Executivo"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="12dp"
+                android:layout_gravity="center|right"
+                android:padding="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorPrimary" />
+
         </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/imgLinha"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#d81717"
+            android:layout_gravity="right|center_vertical">
+
+        </FrameLayout>
+
+
 
     </LinearLayout>
 

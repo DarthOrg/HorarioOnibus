@@ -9,7 +9,7 @@
     <color name="colorPrimaryDarkTemaEscuro">#111111</color>
 
     <!--COR DE DESTAQUE-->
-    <color name="colorAccent">#00796B</color>
+    <color name="colorAccent">#455A64</color>
 
     <!--COR DO TEXTO E ICONES-->
     <color name="textColorPrimary">#616161</color>
@@ -21,6 +21,6 @@
     <!-- COR DAS LINHAS -->
     <color name="colorLinhaAzul">#4285F4</color>
     <color name="colorLinhaVermelha">#EA4335</color>
-    <color name="colorLinhaExecutiva">#FBBC05</color>
+    <color name="colorLinhaExecutiva">#FFA000</color>
 
 </resources>

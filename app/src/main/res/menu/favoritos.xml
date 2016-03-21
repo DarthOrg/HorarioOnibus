@@ -6,7 +6,7 @@
         android:id="@+id/action_favoritos_pesquisar"
         android:orderInCategory="100"
         android:title="@string/txt_pesquisar"
-        android:icon="@drawable/ic_pesquisar"
+        android:icon="@drawable/ic_perquisar_branco"
         app:showAsAction="always" />
 
 

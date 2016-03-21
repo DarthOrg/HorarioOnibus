@@ -46,6 +46,21 @@ public class Favoritos extends AppCompatActivity {
         linhas.add(linhaAtoa);
         linhas.add(linhaAtoa2);
         linhas.add(linhaAtoa3);
+        linhas.add(linhaAtoa);
+        linhas.add(linhaAtoa2);
+        linhas.add(linhaAtoa3);
+        linhas.add(linhaAtoa);
+        linhas.add(linhaAtoa2);
+        linhas.add(linhaAtoa3);
+        linhas.add(linhaAtoa);
+        linhas.add(linhaAtoa2);
+        linhas.add(linhaAtoa3);
+        linhas.add(linhaAtoa);
+        linhas.add(linhaAtoa2);
+        linhas.add(linhaAtoa3);
+        linhas.add(linhaAtoa);
+        linhas.add(linhaAtoa2);
+        linhas.add(linhaAtoa3);
 
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
