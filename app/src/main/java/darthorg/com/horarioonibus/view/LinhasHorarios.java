@@ -1,33 +1,47 @@
 package darthorg.com.horarioonibus.view;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
+import android.support.v4.content.ContextCompat;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ListView;
-
-import java.util.ArrayList;
-import java.util.List;
+import android.webkit.WebSettings;
 
 import darthorg.com.horarioonibus.R;
-import darthorg.com.horarioonibus.model.Linha;
 
 public class LinhasHorarios extends AppCompatActivity {
-
+    private ViewPager viewPager;
+    private TabLayout tabLayout;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_linhas_horarios);
-
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("Nome da linha do Ônibus");
+        toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        viewPager = (ViewPager) findViewById(R.id.viewPagerLinhaHorarios);
+        tabLayout = (TabLayout) findViewById(R.id.tabLayoutLinhasHorarios);
+
+        viewPager.setAdapter(new TabLayoutLinhasHorarios(this, getSupportFragmentManager()));
+
+        tabLayout.setupWithViewPager(viewPager);
+        int corOn = ContextCompat.getColor(this, R.color.colorBarraTab);
+        int corOff = ContextCompat.getColor(this, R.color.colorTabOff);
+        int corBarra = ContextCompat.getColor(this, R.color.colorBarraTab);
+        tabLayout.setTabTextColors(corOff, corOn);
+        tabLayout.setSelectedTabIndicatorColor(corBarra);
+        tabLayout.setSelectedTabIndicatorHeight(10);
+
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
     }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -45,10 +59,14 @@ public class LinhasHorarios extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_add_favoritos) {
             return true;
+        }else if (id == R.id.action_edtinerario) {
+            return true;
         } else if (id == android.R.id.home) {
             finish();
         }
 
         return true;
     }
+
+
 }
