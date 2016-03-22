@@ -8,6 +8,12 @@
         android:title="@string/add_Favoritos"
         android:icon="@drawable/ic_favoritos_off"
         app:showAsAction="always" />
+    <item
+        android:id="@+id/action_edtinerario"
+        android:orderInCategory="100"
+        android:title="@string/txt_etinerario"
+        android:icon="@drawable/ic_etinerario"
+        app:showAsAction="always" />
 
 
 
