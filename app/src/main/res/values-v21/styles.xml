@@ -30,4 +30,14 @@
         <item name="android:textColorSecondary">@color/colorBranca</item>
         <item name="android:textColorSecondaryInverse">@color/colorBranca</item>
     </style>
+
+    <style name="AppThemeTabLayout" parent="AppTheme">
+        <item name="android:statusBarColor">@color/colorPrimaryDarkTab</item>
+        <item name="android:textColorPrimary">@color/colorBarraTab</item>
+        <item name="android:textColorSecondaryInverse">@color/colorBarraTab</item>
+        <item name="android:textColorSecondary">@color/colorBarraTab</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkTab</item>
+        <item name="colorPrimary">@color/colorPrimaryTab</item>
+        <item name="android:textColorPrimaryInverse">@color/colorBarraTab</item>
+    </style>
 </resources>
