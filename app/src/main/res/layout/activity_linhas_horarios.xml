@@ -1,39 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/colorPrimary"
     android:layout_height="match_parent"
-    tools:context=".view.HorarioOnibus">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="ms.senac.br.appsenac.SobrePosts">
 
-
-    <android.support.design.widget.CoordinatorLayout
+    <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fitsSystemWindows="true">
+        android:layout_height="wrap_content"
+        app:elevation="5dp">
 
-        <android.support.design.widget.AppBarLayout
+        <!--TOOLBAR TOPO-->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryTab"/>
+
+        <!--BARRA INFORMÇÕES-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimaryTab">
+
+            <!--TIPO DE LINHA-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Executivo"
+                android:textColor="@color/colorBarraTab"
+                android:textSize="12dp"
+                android:layout_gravity="center|top"/>
+
+            <!--BARRA DIVISORIA-->
+        <FrameLayout
+            android:layout_width="2dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorBarraTab"
+            android:layout_gravity="center"/>
+
+            <!--TEXTO PROXIMO ONIBUS-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRÓXIMO ÔNIBUS"
+                android:textColor="@color/colorBarraTab"
+                android:textSize="12dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="60dp"
+                android:layout_gravity="center|top"/>
+
+            <!--MINUTOS QUE FALTAM-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="35 MINUTOS"
+                android:textColor="@color/colorBarraTab"
+                android:textSize="25dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="82dp"
+                android:layout_gravity="center|bottom"
+                android:textStyle="bold" />
+
+            <!--IMAGEM ICONE CARTÃO DE TARIFA-->
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="#00ffffff"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:tint="@color/colorBarraTab"
+                android:src="@drawable/ic_cartao_tarifas" />
+
+            <!--VALOR TARIFA-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3,25"
+                android:textColor="@color/colorBarraTab"
+                android:textSize="25dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="80dp"
+                android:layout_gravity="center"
+                android:textStyle="bold" />
+
+            <!--VALOR TARIFA-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tarifa"
+                android:textColor="@color/colorBarraTab"
+                android:textSize="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="125dp"
+                android:tint="@color/colorPrimaryDark"
+                android:layout_gravity="center|bottom" />
+
+        </FrameLayout>
+
+
+
+        <!--TAB LAYOUT A BAIXO-->
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayoutLinhasHorarios"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:elevation="0dp">
+            android:background="@color/colorPrimaryTab"/>
 
-            <android.support.v7.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="@color/colorPrimaryDark"/>
+    </android.support.design.widget.AppBarLayout>
 
-        </android.support.design.widget.AppBarLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPagerLinhaHorarios"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
-
-
-
-    </android.support.design.widget.CoordinatorLayout>
-
-
-
-
-
-</RelativeLayout>
+</LinearLayout>
