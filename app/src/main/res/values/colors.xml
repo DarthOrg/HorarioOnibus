@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!--TEMA LIGTH-->
+    <!--TEMA-->
     <color name="colorPrimary">#e6e6e6</color>
     <color name="colorPrimaryDark">#616161</color>
 
-    <!--TEMA DARK-->
-    <color name="colorPrimaryTemaEscuro">#303030</color>
-    <color name="colorPrimaryDarkTemaEscuro">#111111</color>
+    <!--TEMA TABLAYOUT-->
+    <color name="colorPrimaryTab">#5d6055</color>
+    <color name="colorPrimaryDarkTab">#555246</color>
+    <color name="colorTabOff">#c2c3c9</color>
+    <color name="colorBarraTab">#FFFFFF</color>
 
     <!--COR DE DESTAQUE-->
     <color name="colorAccent">#455A64</color>
@@ -17,6 +19,9 @@
 
     <!--COR BRANCA CARDS-->
     <color name="colorBranca">#FFFFFF</color>
+
+    <!--COR barra top tablayout-->
+
 
     <!-- COR DAS LINHAS -->
     <color name="colorLinhaAzul">#4285F4</color>

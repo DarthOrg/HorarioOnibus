@@ -21,4 +21,7 @@
     <string name="pesquisar_hint">Pesquisar...</string>
     <string name="add_Favoritos">Adicionar_Favoritos</string>
     <string name="txt_Linhas_Horarios">Nome da linha do Ônibus</string>
+    <string name="txtNomeLinhas">Nome da Linha do Onibus correto</string>
+    <string name="txtTipoLinha">Tipo da Linha</string>
+    <string name="txt_etinerario">Etinerários</string>
 </resources>
