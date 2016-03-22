@@ -15,9 +15,6 @@
             android:orientation="horizontal">
 
 
-            <!-- AUTOR E DATA -->
-
-            <!-- BOTAOZINHO CHATO LATERAL DIREITA -->
 
             <FrameLayout
                 android:id="@+id/imgLinha"
@@ -72,7 +69,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            android:text="Nome da Linha do Onibus correto"
+                            android:text="@string/txtNomeLinhas"
                             android:textColor="@color/textColorPrimary"
                             android:textSize="14dp" />
 
@@ -82,7 +79,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
                             android:gravity="bottom"
-                            android:text="Tipo da Linha"
+                            android:text="@string/txtTipoLinha"
                             android:textColor="@color/colorAccent"
                             android:textSize="12dp" />
 
@@ -103,7 +100,6 @@
 
         </LinearLayout>
 
-    <!-- LEGENDA FOTO OU CONTEÚDO POST -->
 
 
 </android.support.v7.widget.CardView>

@@ -117,7 +117,7 @@
                 android:textColor="@color/textColorPrimary"
                 android:textSize="12dp" />
 
-            <TextView
+               <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
