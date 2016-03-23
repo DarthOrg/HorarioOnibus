@@ -19,7 +19,7 @@
         android:orderInCategory="100"
         android:title="@string/txt_configuracoes"
         android:icon="@drawable/ic_configuracoes"
-        app:showAsAction="never" />
+        app:showAsAction="always" />
 
 
 </menu>

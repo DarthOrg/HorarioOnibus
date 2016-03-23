@@ -24,4 +24,6 @@
     <string name="txtNomeLinhas">087 - Guaicurus / Gen.Osório</string>
     <string name="txtTipoLinha">Tipo da Linha</string>
     <string name="txt_etinerario">Etinerários</string>
+    <string name="txt_tarifas">Tarifas</string>
+    <string name="txt_aviso">Aviso!</string>
 </resources>

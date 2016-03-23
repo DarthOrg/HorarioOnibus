@@ -93,6 +93,8 @@ public class HorarioOnibus extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_configuracoes) {
+            Intent intent = new Intent(this,LinhasHorarios.class);
+            startActivity(intent);
 
         }else if (id == R.id.action_pesquisar) {
             return true;
@@ -112,17 +114,19 @@ public class HorarioOnibus extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_horarios) {
-            // Handle the camera action
-        } else if (id == R.id.nav_favoritos) {
-
-
+         if (id == R.id.nav_favoritos) {
             Intent intent = new Intent(this,Favoritos.class);
             startActivity(intent);
 
-        } else if (id == R.id.nav_temas) {
+        }else if (id == R.id.nav_atendimento_especial) {
 
-        } else if (id == R.id.nav_configuracoes) {
+         }else if (id == R.id.nav_tarifas) {
+
+        }else if (id == R.id.nav_aviso) {
+
+         } else if (id == R.id.nav_configuracoes) {
+             Intent intent = new Intent(this,LinhasHorarios.class);
+             startActivity(intent);
 
         } else if (id == R.id.nav_compartilhar_app) {
 

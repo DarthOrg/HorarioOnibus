@@ -4,17 +4,21 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_horarios"
-            android:icon="@drawable/ic_horarios"
-            android:title="@string/txt_horario" />
-        <item
             android:id="@+id/nav_favoritos"
             android:icon="@drawable/ic_favoritos"
             android:title="@string/txt_favoritos" />
         <item
-            android:id="@+id/nav_temas"
-            android:icon="@drawable/ic_temas"
-            android:title="@string/txt_temas" />
+            android:id="@+id/nav_atendimento_especial"
+            android:icon="@drawable/ic_especial"
+            android:title="Atendimento Especial" />
+        <item
+            android:id="@+id/nav_tarifas"
+            android:icon="@drawable/ic_cartao_tarifas"
+            android:title="@string/txt_tarifas" />
+        <item
+            android:id="@+id/nav_aviso"
+            android:icon="@drawable/ic_aviso"
+            android:title="@string/txt_aviso" />
         <item
             android:id="@+id/nav_configuracoes"
             android:icon="@drawable/ic_configuracoes"
