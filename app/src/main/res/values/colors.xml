@@ -4,9 +4,15 @@
     <color name="colorPrimary">#e6e6e6</color>
     <color name="colorPrimaryDark">#616161</color>
 
+    <!--&lt;!&ndash;TEMA TABLAYOUT&ndash;&gt;-->
+    <!--<color name="colorPrimaryTab">#5d6055</color>-->
+    <!--<color name="colorPrimaryDarkTab">#555246</color>-->
+    <!--<color name="colorTabOff">#c2c3c9</color>-->
+    <!--<color name="colorBarraTab">#FFFFFF</color>-->
+
     <!--TEMA TABLAYOUT-->
-    <color name="colorPrimaryTab">#5d6055</color>
-    <color name="colorPrimaryDarkTab">#555246</color>
+    <color name="colorPrimaryTab">#00796B</color>
+    <color name="colorPrimaryDarkTab">#006357</color>
     <color name="colorTabOff">#c2c3c9</color>
     <color name="colorBarraTab">#FFFFFF</color>
 

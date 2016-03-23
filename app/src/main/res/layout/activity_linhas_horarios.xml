@@ -10,7 +10,10 @@
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
         app:elevation="5dp">
+
+
 
         <!--TOOLBAR TOPO-->
         <android.support.v7.widget.Toolbar
@@ -48,9 +51,9 @@
                 android:layout_height="wrap_content"
                 android:text="PRÓXIMO ÔNIBUS"
                 android:textColor="@color/colorBarraTab"
-                android:textSize="12dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="60dp"
+                android:textSize="10dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="50dp"
                 android:layout_gravity="center|top"/>
 
             <!--MINUTOS QUE FALTAM-->
@@ -59,16 +62,16 @@
                 android:layout_height="wrap_content"
                 android:text="35 MINUTOS"
                 android:textColor="@color/colorBarraTab"
-                android:textSize="25dp"
-                android:layout_marginBottom="2dp"
-                android:layout_marginRight="82dp"
+                android:textSize="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="67dp"
                 android:layout_gravity="center|bottom"
                 android:textStyle="bold" />
 
             <!--IMAGEM ICONE CARTÃO DE TARIFA-->
             <ImageButton
-                android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:background="#00ffffff"
                 android:layout_marginTop="5dp"
@@ -82,9 +85,9 @@
                 android:layout_height="wrap_content"
                 android:text="3,25"
                 android:textColor="@color/colorBarraTab"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:layout_marginTop="6dp"
-                android:layout_marginLeft="80dp"
+                android:layout_marginLeft="70dp"
                 android:layout_gravity="center"
                 android:textStyle="bold" />
 
@@ -95,10 +98,10 @@
                 android:text="Tarifa"
                 android:textColor="@color/colorBarraTab"
                 android:textSize="12dp"
-                android:layout_marginBottom="12dp"
-                android:layout_marginLeft="125dp"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="110dp"
                 android:tint="@color/colorPrimaryDark"
-                android:layout_gravity="center|bottom" />
+                android:layout_gravity="center|bottom"/>
 
         </FrameLayout>
 
@@ -113,10 +116,15 @@
 
     </android.support.design.widget.AppBarLayout>
 
+
     <android.support.v4.view.ViewPager
         android:id="@+id/viewPagerLinhaHorarios"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />
+
+
+
+
 
 </LinearLayout>

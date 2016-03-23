@@ -25,16 +25,20 @@
             android:name=".view.Favoritos"
             android:label="@string/txt_favoritos"
             android:theme="@style/ThemeFavoritos">
+        </activity>
+
+        <activity
+            android:name=".view.LinhasHorarios"
+            android:label="@string/txtNomeLinhas"
+            android:theme="@style/AppThemeTabLayout">
 
 
         </activity>
+
         <activity
-            android:name=".view.LinhasHorarios"
-            android:label="@string/txt_Linhas_Horarios"
-            android:theme="@style/ThemeFavoritos">
-
-
-
+            android:name=".view.Etinerarios"
+            android:label="@string/txt_etinerario"
+            android:theme="@style/AppThemeTabLayout">
         </activity>
     </application>
 
